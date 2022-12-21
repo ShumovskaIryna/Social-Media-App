@@ -36,7 +36,7 @@ export default function TopBar(props) {
                         <span className="topbarIconBadge">1</span>
                     </div>
                 </div>
-                <img src="/access/person/1.jpeg" alt="Panda" className="topbarImg" />
+                <img src="/assets/person/1.jpeg" alt="Panda" className="topbarImg" />
             </div>
         </div>
     )
