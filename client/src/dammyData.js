@@ -2,12 +2,12 @@ export const Users = [
     {
       id:1,
       profilePicture: "assets/person/1.jpeg",
-      username: "Safak Kocaoglu",
+      username: "Vlad Panda",
     },
     {
       id:2,
       profilePicture: "assets/person/2.jpeg",
-      username: "Janell Shrum",
+      username: "Productive NotACat",
     },
     {
       id:3,
@@ -79,14 +79,6 @@ export const Users = [
       comment: 3,
     },
     {
-      id: 5,
-      photo: "assets/post/5.jpeg",
-      date: "5 hours ago",
-      userId: 5,
-      like: 23,
-      comment: 5,
-    },
-    {
       id: 6,
       desc: "Change the world by being yourself.",
       photo: "assets/post/6.jpeg",
@@ -103,13 +95,5 @@ export const Users = [
       userId: 7,
       like: 52,
       comment: 3,
-    },
-    {
-      id: 8,
-      photo: "assets/post/8.jpeg",
-      date: "3 days ago",
-      userId: 8,
-      like: 15,
-      comment: 1,
     },
   ];
