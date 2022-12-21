@@ -10,6 +10,8 @@ import {
     Event, 
     School 
 } from '@mui/icons-material';
+import { Users } from "../../dammyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function Sidebar(props) {
     
@@ -57,11 +59,11 @@ export default function Sidebar(props) {
                     </ul>
                     <button className="sidebarButton">Show More</button>
                     <hr className="sidebarHr" />
-                    {/* <ul className="sidebarFriendList">
-                    {Users.map((u) => (
-                        <CloseFriend key={u.id} user={u} />
-                    ))}
-                    </ul> */}
+                    <ul className="sidebarFriendList">
+                        {Users.map((u) => (
+                            <CloseFriend key={u.id} user={u} />
+                        ))}
+                    </ul>
                 </div>
             </div>
         </>
