@@ -68,6 +68,7 @@
   
   .topbarIconItem {
     margin-right: 15px;
+    margin-top: 25px;
     cursor: pointer;
     position: relative;
   }

@@ -1,7 +1,7 @@
 .login {
   width: 100vw;
   height: 100vh;
-  background-color: #f0f2f5;
+  background-color: #050b1d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,18 +24,19 @@
 .loginLogo {
   font-size: 50px;
   font-weight: 800;
-  color: #1775ee;
+  color: #edf2ff;
   margin-bottom: 10px;
 }
 
 .loginDesc {
   font-size: 24px;
+  color: #edf2ff;
 }
 
 .loginBox{
-  height: 400px;
+  height: 300px;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(154, 187, 4);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -44,6 +45,7 @@
 
 .loginInput{
   height: 50px;
+  margin-bottom: 10px;
   border-radius: 10px;
   border: 1px solid gray;
   font-size: 18px;
@@ -51,23 +53,24 @@
 }
 
 .loginInput:focus{
-    outline: none;
+  outline: none;
 }
 
 .loginButton{
   height: 50px;
   border-radius: 10px;
   border: none;
-  background-color: #1775ee;
+  background-color: #101831;
   color: white;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .loginForgot{
   text-align: center;
-  color: #1775ee;
+  color: #edf2ff;
 }
 
 .loginRegisterButton{
@@ -76,9 +79,24 @@
   height: 50px;
   border-radius: 10px;
   border: none;
-  background-color: #42b72a;
+  background-color: rgb(65, 79, 1);
   color: white;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.topbarIconBadge {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(154, 187, 4);
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  top: -75px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
 }
