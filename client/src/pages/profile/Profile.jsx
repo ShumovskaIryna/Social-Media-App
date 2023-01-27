@@ -17,12 +17,12 @@ export default function Profile(props) {
                     <div className="profileCover">
                     <img
                         className="profileCoverImg"
-                        src={`${PF}post/2.jpeg`}
+                        src={`${PF}post/1.jpeg`}
                         alt=""
                     />
                     <img
                         className="profileUserImg"
-                        src={`${PF}person/6.jpeg`}
+                        src={`${PF}person/1.jpeg`}
                         alt=""
                     />
                     </div>
