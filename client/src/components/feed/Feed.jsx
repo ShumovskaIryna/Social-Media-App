@@ -15,7 +15,7 @@ useEffect(()=>{
         setPosts(res.data);
     }
     fetchPosts();
-}, [])
+}, [username])
     return (
         <>
             <div className="feed">
