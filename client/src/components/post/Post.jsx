@@ -1,6 +1,7 @@
 import "./post.css";
 import { MoreVert } from '@mui/icons-material'
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { format } from 'timeago.js'
 
@@ -12,7 +13,7 @@ export default function Post({post}) {
 
   useEffect(()=>{
     const fetchUser = async  () =>{
-        const res = await axios.get(`users/${post.userId}`)
+        const res = await axios.get(`/users?userId=${post.userId}`)
         console.log(res);
         setUser(res.data);
     }
@@ -28,11 +29,17 @@ export default function Post({post}) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
+            <Link to={`profile/${user.username}`}>
             <img
-              className="postProfileImg"
-              src={user.profilePicture || PF+"person/noAvatar.png"}
-              alt=""
-            />
+                className="postProfileImg"
+                src={
+                  user.profilePicture
+                    ? PF + user.profilePicture
+                    : PF + "person/noAvatar.jpeg"
+                }
+                alt=""
+              />
+            </Link>
             <span className="postUsername">
               {user.username}
             </span>
@@ -48,8 +55,18 @@ export default function Post({post}) {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <img className="likeIcon" src="assets/like.png" onClick={likeHandler} alt="" />
-            <img className="likeIcon" src="assets/heart.png" onClick={likeHandler} alt="" />
+          <img
+              className="likeIcon"
+              src={`${PF}like.png`}
+              onClick={likeHandler}
+              alt=""
+            />
+            <img
+              className="likeIcon"
+              src={`${PF}heart.png`}
+              onClick={likeHandler}
+              alt=""
+            />
             <span className="postLikeCounter">{like} people like it</span>
           </div>
           <div className="postBottomRight">
