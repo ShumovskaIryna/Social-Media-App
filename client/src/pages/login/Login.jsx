@@ -2,6 +2,7 @@ import "./login.css";
 import { useContext, useRef } from 'react';
 import { loginCall } from "../../apiCalls"
 import { AuthContext } from "../../context/AuthContext";
+import CircularProgress from '@mui/material/CircularProgress';
 
 export default function Login() {
   const email = useRef();
@@ -39,7 +40,7 @@ export default function Login() {
             required/>
             <button className="loginButton">
               {isFetching 
-              ? "loading"
+              ? <CircularProgress sx={{ color: 'green' }}/>
               : "Log In"}
             </button>
             <span className="loginForgot">Forgot Password?</span>
