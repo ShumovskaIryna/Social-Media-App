@@ -7,6 +7,7 @@
 }
 
 .profileCover{
+    min-width: 100vh;
     height: 320px;
     position: relative;
 }

@@ -1,6 +1,6 @@
 .topbarContainer {
     height: 50px;
-    width: 100%;
+    min-width: 100vh;
     background-color: #050b1d;
     display: flex;
     align-items: center;
