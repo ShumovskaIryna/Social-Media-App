@@ -3,7 +3,8 @@ import {
   PermMedia, 
   Label,
   Room, 
-  EmojiEmotions
+  EmojiEmotions,
+  Cancel,
 } from '@mui/icons-material';
 import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
@@ -57,6 +58,12 @@ export default function Share() {
           />
         </div>
         <hr className="shareHr"/>
+        {file && (
+          <div className="shareImgContainer">
+            <img className="shareImg" src={URL.createObjectURL(file)} alt="" />
+            <Cancel className="shareCancelImg" onClick={() => setFile(null)} />
+          </div>
+        )}
         <form className="shareBottom" onSubmit={submitHandler}>
           <div className="shareOptions">
             <label htmlFor="file" className="shareOption">
